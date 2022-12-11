@@ -12,9 +12,7 @@ app.get('/', (req, res) => {
 });
 const dbConfig = require('./config/database.config.js');
 const mongoose = require('mongoose');
-
 mongoose.Promise = global.Promise;
-
 mongoose.connect(dbConfig.url, {
     useNewUrlParser: true
 }).then(() => {
@@ -26,3 +24,5 @@ mongoose.connect(dbConfig.url, {
 app.listen(3000, () => {
     console.log("Server is listening on port 3000");
 });
+const DepartmentRoute = require('./routes/Department')
+app.use('/department',DepartmentRoute)

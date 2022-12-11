@@ -1,14 +1,11 @@
 var mongoose = require('mongoose');
 var schema=new mongoose.Schema({
-Departmentid:{
-    type: Int,
+Departmentid: {
+    type:String,
     required: true,
     unique: true
 },
-Departmentame:{
-    type:String,
-    default:" "
-},
-})
+DepartmentName:String,
+});
 var department = new mongoose.model('Department', schema);
 module.exports = department;
