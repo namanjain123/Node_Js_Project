@@ -4,7 +4,6 @@ let nums=[1,2,3];
 
 console.log(numOne);
 let string = 'Love is the most powerful feeling in the world'
-
-console.log(string.endsWith('world'))       ;  // true
-console.log(string.endsWith('love'))         ; // false
+console.log(string.endsWith('world'));
+console.log(string.endsWith('love'));
 console.log(string.endsWith('in the world'));
