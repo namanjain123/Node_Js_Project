@@ -23,3 +23,9 @@ for (const company of companies) {
   setOf.add(company)
 }
 console.log(setOf)
+
+//clearing the set
+
+companies.clear()
+console.log(companies)
+
