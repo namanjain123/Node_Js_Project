@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1>Removing child Node</h1>
+    <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>React </li>
+        <li>FullStack </li>
+        <li>DataAnalysis </li>
+        <li>ReactNative </li>
+        <li>MachineLearning </li>
+    </ul>
+
+    <script>
+        const ul = document.querySelector('ul')
+        const lists = document.querySelectorAll('li')
+        for (const list of lists) {
+            ul.removeChild(list)
+
+        }
+    </script>
+</body>
+
+</html>
